@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_calculator_FILE /Users/akatsuki/Desktop/calculator/build/calculator)
-set(__QT_DEPLOY_TARGET_calculator_TYPE EXECUTABLE)
