@@ -1,0 +1,42 @@
+QPushButton {
+    background-color:rgb(111, 207, 151);
+    color: rgb(0, 0, 2);
+    border-style: inset;
+    border-color: beige;
+    border-radius: 10px;
+}
+
+QPushButton:hover
+{
+    background-color:rgb(47, 160, 132); /*改变背景色*/
+    color:rgb(0, 0, 2);
+    border-style:inset;/*改变边框风格*/
+    border-color: beige;
+    border-radius: 10px;
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(31, 111, 95); /*改变背景色*/
+    color:rgb(0, 0, 2);
+    border-style:inset;/*改变边框风格*/
+    border-color: beige;
+    border-radius: 10px;
+}
+
+QMainWindow {
+    background-color: black;
+}
+
+QLabel {
+    color: white;
+    font-family: "Georgia";
+    font-size: 18px;
+}
+
+QLabel#login_title {
+    color: white;
+    font-family: "Georgia";
+    font-size: 24px;
+    font-weight: bold;
+}
