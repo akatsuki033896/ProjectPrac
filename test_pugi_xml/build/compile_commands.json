@@ -1,0 +1,14 @@
+[
+{
+  "directory": "E:/test_pugi_xml/build",
+  "command": "e:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\test_pugi_xml.dir\\includes_CXX.rsp -g -std=c++11 -o CMakeFiles\\test_pugi_xml.dir\\main.cpp.obj -c E:\\test_pugi_xml\\main.cpp",
+  "file": "E:/test_pugi_xml/main.cpp",
+  "output": "CMakeFiles/test_pugi_xml.dir/main.cpp.obj"
+},
+{
+  "directory": "E:/test_pugi_xml/build",
+  "command": "e:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\test_pugi_xml.dir\\includes_CXX.rsp -g -std=c++11 -o CMakeFiles\\test_pugi_xml.dir\\pugixml\\pugixml.cpp.obj -c E:\\test_pugi_xml\\pugixml\\pugixml.cpp",
+  "file": "E:/test_pugi_xml/pugixml/pugixml.cpp",
+  "output": "CMakeFiles/test_pugi_xml.dir/pugixml/pugixml.cpp.obj"
+}
+]
