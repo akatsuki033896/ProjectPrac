@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\test_pugi_xml.dir/objects.a
-E:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\test_pugi_xml.dir/objects.a @CMakeFiles\test_pugi_xml.dir\objects1.rsp
-e:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\test_pugi_xml.dir/objects.a -Wl,--no-whole-archive -o test_pugi_xml.exe -Wl,--out-implib,libtest_pugi_xml.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_pugi_xml.dir\linkLibs.rsp

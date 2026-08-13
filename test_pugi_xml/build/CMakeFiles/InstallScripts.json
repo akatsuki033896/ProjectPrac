@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"E:/test_pugi_xml/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

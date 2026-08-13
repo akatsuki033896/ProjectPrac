@@ -1,3 +1,0 @@
-E:/test_pugi_xml/build/CMakeFiles/test_pugi_xml.dir
-E:/test_pugi_xml/build/CMakeFiles/edit_cache.dir
-E:/test_pugi_xml/build/CMakeFiles/rebuild_cache.dir
