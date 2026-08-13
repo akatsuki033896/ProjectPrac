@@ -1,6 +1,7 @@
 #include "pugixml/pugixml.hpp"
 #include <iostream>
 #include <cstring>
+#include <sstream>
 
 void find_node() {
     const char* xml =
@@ -29,23 +30,39 @@ void find_node() {
 void build_xml(pugi::xml_document& doc) {
     pugi::xml_node root = doc.append_child("Dataset");
     root.append_attribute("xmlns") = "http://www.iec.ch/S421/2.0";
+    root.append_attribute("gml:id") = "S421.abc.abcde.00001";
 
-    pugi::xml_node name1 = root.append_child("name1");
-    name1.append_child(pugi::node_pcdata).set_value("hello");
+    pugi::xml_node bound = root.append_child("gml:boundedBy");
+    
+    // gml:Envelope
+    auto envelope = bound.append_child("gml:Envelope");
+    envelope.append_attribute("srsName") = "http://www.opengis.net/def/crs/EPSG/0/4326";
+    envelope.append_attribute("srsDimension") = "2";
+    envelope.append_child("gml:lowerCorner");
+    envelope.append_child("gml:upperCorner");
 
-    pugi::xml_node name2 = root.append_child("name2");
-    // name2.set_value("world"); 无效
-    name2.append_child(pugi::node_pcdata).set_value("world");
+    pugi::xml_node s100 = root.append_child("S100:DatasetIdentificationInformation");
+    s100.append_child("S100:productIdentifier").text().set("S-421");
 
-    pugi::xml_node name3 = name1.append_child("name3");
-    name3.append_child(pugi::node_pcdata).set_value("xml");
     return;
 }
 
+void func() {
+    std::ostringstream oss;
+    oss << 123 << " hello";
+    auto str = oss.str();
+    std::cout << str << std::endl;
+}
+
 int main() {
-    pugi::xml_document doc;
-    build_xml(doc);
-    doc.save(std::cout, "  "); // 终端输出
-    doc.save_file("../output.gml", "  ");
+    // pugi::xml_document doc;
+    // build_xml(doc);
+    
+    // doc.save(std::cout, "    "); // 终端输出
+    // doc.save_file("../output.xml", "    ");
+
+
+    // string test
+    func();
     return 0;
 }

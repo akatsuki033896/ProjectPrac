@@ -135,4 +135,6 @@ CMakeFiles/test_pugi_xml.dir/main.cpp.obj: E:\test_pugi_xml\main.cpp \
  E:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc \
  E:/msys64/ucrt64/include/c++/15.2.0/cstring \
  E:/msys64/ucrt64/include/string.h \
- E:/msys64/ucrt64/include/sec_api/string_s.h
+ E:/msys64/ucrt64/include/sec_api/string_s.h \
+ E:/msys64/ucrt64/include/c++/15.2.0/sstream \
+ E:/msys64/ucrt64/include/c++/15.2.0/bits/sstream.tcc
