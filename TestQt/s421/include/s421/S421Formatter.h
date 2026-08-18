@@ -1,0 +1,33 @@
+#pragma once
+// S421Formatter.h - 可选的调试/诊断输出模块（人读格式打印 Dataset）
+
+#include "S421DataModel.h"
+#include <ostream>
+
+namespace s421 {
+
+// FormatResult - 格式化结果的摘要信息
+struct FormatResult {
+    int waypointCount = 0;       // 航路点总数
+    int legCount = 0;            // 航段总数
+    int actionPointCount = 0;    // 动作点总数
+    int scheduleCount = 0;       // 调度总数
+};
+
+// formatDataset - 将 Dataset 格式化输出到流
+//
+// 参数:
+//   ds      - 要显示的数据集
+//   os      - 输出流（通常是 std::cout）
+//   verbose - true=显示详细信息（每个航点坐标、航段参数等）
+//             false=仅显示摘要（航点数、航段数等计数）
+//
+// 返回: FormatResult 摘要结构
+FormatResult formatDataset(const Dataset& ds, std::ostream& os,
+                           bool verbose = false);
+
+// summarizeRoute - 生成航线的一行摘要（适合日志记录）
+// 格式: "route=RTE123 edition=1 waypoints=5 status=Planned"
+std::string summarizeRoute(const Route& route);
+
+} // namespace s421
